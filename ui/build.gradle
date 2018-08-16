@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+def coreVersion = '3.1.7'
+
+dependencies {
+    implementation "com.android.support:appcompat-v7:${support_version}"
+    implementation 'io.card:android-sdk:5.4.1'
+    implementation 'com.github.devnied:bit-lib4j:1.4.10'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation "ru.tinkoff.core:core-nfc:${coreVersion}"
+    implementation "ru.tinkoff.core:core-log:${coreVersion}"
+    implementation "ru.tinkoff.core:core-log-android:${coreVersion}"
+
+    implementation project(':core')
+}
+
+android {
+    compileSdkVersion 27
+
+    lintOptions {
+        disable 'InvalidPackage'
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        encoding 'windows-1251' // write your encoding here
+    }
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode Integer.parseInt(VERSION_CODE)
+        versionName VERSION_NAME
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+apply from: '../gradle/publish-lib.gradle'

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/searchAction"
+        android:icon="@drawable/ic_search"
+        android:title="@string/toolbar_search" />
+
+    <item
+        android:id="@+id/favorsAction"
+        android:icon="@mipmap/ic_reports"
+        android:title="@string/toolbar_favorites" />
+
+    <item
+        android:id="@+id/correspAction"
+        android:icon="@mipmap/ic_balance_bar"
+        android:title="@string/toolbar_correspondence" />
+
+    <item
+        android:id="@+id/balanceAction"
+        android:icon="@mipmap/ic_refill_bar"
+        android:title="@string/toolbar_balance" />
+
+    <item
+        android:id="@+id/moreAction"
+        android:icon="@drawable/ic_more_horiz_black_24dp"
+        android:title="@string/toolbar_more" />
+</menu>

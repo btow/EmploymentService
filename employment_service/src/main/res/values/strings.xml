@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Employment service</string>
+
+    <!-- bottom menu-->
+    <string name="toolbar_search">Поиск</string>
+    <string name="toolbar_favorites">Избранное</string>
+    <string name="toolbar_correspondence">Переписка</string>
+    <string name="toolbar_balance">Баланс</string>
+    <string name="toolbar_more">Ещё</string>
+
+    <!-- tinkoff-->
+    <string name="activity_title_payment_result">Подтверждение</string>
+    <string name="payment_result_success">Платёж на сумму %1$s\nуспешно проведён</string>
+    <string name="payment_failed">Платеж не прошел. Попробуй позже.</string>
+    <string name="payment_cancelled">Оплата отменена</string>
+    <string name="msg_servers_status">Статус сервера ->\ </string>
+    <string name="msg_servers_invalid">НЕПОДХОДЯЩИЙ></string>
+    <string name="msg_servers_bad">ОТСУТСТВУЮЩИЙ</string>
+    <string name="attention">Внимание</string>
+    <string name="notmail_msg">Для продолжения необходимо авторизоваться!\\nПосле ввода и подтверждения e-mail на ваш счет будет зачислен стартовый бонус: 1 бесплатная проверка объекта недвижимости.</string>
+    <string name="ok">Да</string>
+    <string name="cancel">Отмена</string>
+</resources>
